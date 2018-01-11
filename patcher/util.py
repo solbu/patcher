@@ -20,7 +20,7 @@
 #
 from patcher import Error
 import sys, os
-import md5
+import hashlib
 #import commands
 
 # Our own version of commands' getstatusoutput(). We have a commands
@@ -51,7 +51,7 @@ def execcmd(*cmd, **kwargs):
 
 def filedigest(filename):
     file = open(filename)
-    digest = md5.md5()
+    digest = hashlib.md5()
     data = file.read(8192)
     while data:
         digest.update(data)
