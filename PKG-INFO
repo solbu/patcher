@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: patcher
+Version: 0.6
+Summary: Tool for quick creation of patches against a source tree
+Home-page: http://labix.org/patcher
+Author: Gustavo Niemeyer
+Author-email: gustavo@niemeyer.net
+License: GPL
+Description: Patcher is a tool for quick creation of patches against a project
+        source tree.  Patcher functionality resembles a lightweight
+        version control system. It has no repository, and only controls
+        differences between a pristine version and a working copy.
+        
+Platform: UNKNOWN

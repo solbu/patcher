@@ -1,0 +1,102 @@
+
+About patcher
+-------------
+
+Patcher is a tool for quick creation of patches against a project
+source tree.  Patcher functionality resembles a lightweight
+version control system. It has no repository, and only controls
+differences between a pristine version and a working copy.
+
+
+Why?
+----
+
+The idea for developing patcher happened during the development
+of Conectiva Linux. More specifically, when we had to fix some of
+our packages to compile with GCC 3.2. Fixing a package which is
+not compiling due to some issue in the environment is a very
+common task in a distribution's development. At the same time,
+the source code of projects must be kept intact, forcing
+developers to work with individual patches to change some
+behavior in the project. Patcher makes it very easy to work in
+such environment.
+
+
+Using patcher
+-------------
+
+Here's a very simple succession of commands, with explanations.
+
+Unpack the project:
+
+$ tar xzf project-1.0.tar.gz
+$ cd project-1.0
+
+Create patcher structures for the project:
+
+$ ptr start
+
+Change the project somehow:
+
+$ cd src
+$ vi project.c
+
+Check what have been made so far:
+
+$ ptr status
+?   project.o
+M   project.c
+$ ptr diff project.c
+...
+
+Extract a patch for these changes:
+
+$ cd ../..
+$ ptr diff project-1.0 > project-1.0-changes.patch
+
+Remove patcher structures from the project:
+
+$ ptr stop project-1.0
+
+
+Using patcher with large trees
+------------------------------
+
+When using patcher with a large source tree you can choose to include
+files under patcher control "on demand". To do that, first run the start
+command with the -n parameter:
+
+$ tar xzf project-1.0.tar.gz
+$ cd project-1.0
+$ ptr start -n
+
+Then, whenever you want to edit a file, add it to patcher control first:
+
+$ cd src
+$ ptr add project.c
+A    project.c
+$ vi project.c
+
+When you're done, extract a patch for these changes as usual:
+
+$ cd ../..
+$ ptr diff project-1.0 > project-1.0-changes.patch
+
+
+Download
+--------
+
+You can find it in http://moin.conectiva.com.br/Patcher
+
+
+License
+-------
+
+Patcher is released under GPL. Read LICENSE file for more information.
+
+
+Author
+------
+
+Patcher was written by Gustavo Niemeyer <niemeyer@conectiva.com>.
+

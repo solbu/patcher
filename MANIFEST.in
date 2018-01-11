@@ -1,0 +1,2 @@
+recursive-include patcher *.py
+include ptr MANIFEST.in README LICENSE Makefile
