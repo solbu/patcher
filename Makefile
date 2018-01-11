@@ -2,11 +2,11 @@
 # Simple wrapper for setup.py script
 #
 
-DESTDIR=/
-PYTHON=python
+DESTDIR	?=/
+PYTHON	=python
 
-prefix=/usr
-bindir=$(prefix)/bin
+prefix	?=/usr
+bindir	=$(prefix)/bin
 
 all:
 	$(PYTHON) setup.py build
