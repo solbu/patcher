@@ -2,9 +2,11 @@ Metadata-Version: 1.0
 Name: patcher
 Version: 0.7
 Summary: Tool for quick creation of patches against a source tree
-Home-page: http://labix.org/patcher
+Home-page: https://github.com/solbu/patcher
 Author: Gustavo Niemeyer
 Author-email: gustavo@niemeyer.net
+Maintainer: Johnny A. Solbu
+Maintainer-email: johnny@solbu.net
 License: GPL
 Description: Patcher is a tool for quick creation of patches against a project
         source tree.  Patcher functionality resembles a lightweight

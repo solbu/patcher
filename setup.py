@@ -15,7 +15,9 @@ setup(name="patcher",
       description = "Tool for quick creation of patches against a source tree",
       author = "Gustavo Niemeyer",
       author_email = "gustavo@niemeyer.net",
-      url = "http://labix.org/patcher",
+      maintainer = "Johnny A Solbu",
+      maintainer_email = "johnny@solbu.net",
+      url = "https://github.com/solbu/patcher",
       license = "GPL",
       long_description =
 """\
