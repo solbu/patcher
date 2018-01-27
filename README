@@ -86,17 +86,17 @@ $ ptr diff project-1.0 > project-1.0-changes.patch
 Download
 --------
 
-You can find it in http://moin.conectiva.com.br/Patcher
+You can find it at https://github.com/solbu/patcher
 
 
 License
 -------
 
-Patcher is released under GPL. Read LICENSE file for more information.
+Patcher is released under the GNU GPL version 2, or later. Read LICENSE file for more information.
 
 
 Author
 ------
 
 Patcher was written by Gustavo Niemeyer <niemeyer@conectiva.com>.
-
+Current maintainer: Johnny A. Solbu <johnny@solbu.net>
