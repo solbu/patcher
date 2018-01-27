@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: patcher
-Version: 0.6
+Version: 0.7
 Summary: Tool for quick creation of patches against a source tree
 Home-page: http://labix.org/patcher
 Author: Gustavo Niemeyer

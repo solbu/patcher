@@ -23,7 +23,7 @@ from patcher.command import *
 import sys
 
 AUTHOR  = "Gustavo Niemeyer <niemeyer@conectiva.com>"
-VERSION = "0.6"
+VERSION = "0.7"
 
 HELP = """\
 Usage: ptr COMMAND [COMMAND ARGUMENTS]
