@@ -1,0 +1,6 @@
+v0.7 2018-01-28  Johnny A. Solbu <solbu@solbu.net>
+
+	* Add manpage
+	* Update URL, clarify GPL version license as found in the source files
+	* Fix Makefile, add proper DESTDIR support
+	* Apply mageia patch: Replace md5 with hashlib
